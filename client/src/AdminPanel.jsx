@@ -14,7 +14,7 @@ function AdminPanel({ onHomeClick }) {
     try {
       const token = localStorage.getItem("token");
 
-      const response = await fetch("http://localhost:5000/api/news/all", {
+      const response = await fetch("https://localbuzz-1e3d.onrender.com/api/news/all", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -45,7 +45,7 @@ function AdminPanel({ onHomeClick }) {
       const token = localStorage.getItem("token");
 
       const response = await fetch(
-        `http://localhost:5000/api/news/${id}/status`,
+        `https://localbuzz-1e3d.onrender.com/api/news/${id}/status`,
         {
           method: "PATCH",
           headers: {

@@ -10,7 +10,7 @@ function NewsFeed({
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/news")
+    fetch("https://localbuzz-1e3d.onrender.com/api/news")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch news");

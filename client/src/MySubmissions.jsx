@@ -11,7 +11,7 @@ function MySubmissions({ onHomeClick }) {
         const token = localStorage.getItem("token");
 
         const response = await fetch(
-          "http://localhost:5000/api/news/my-submissions",
+          "https://localbuzz-1e3d.onrender.com/api/news/my-submissions",
           {
             headers: {
               Authorization: `Bearer ${token}`,
